@@ -3,7 +3,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.neppplus.listview_20210905.R
 
-ckage com.neppplus.listview_20210905.adapters
+// ckage com.neppplus.listview_20210905.adapters
 
 import android.content.Context
 import android.widget.ArrayAdapter
