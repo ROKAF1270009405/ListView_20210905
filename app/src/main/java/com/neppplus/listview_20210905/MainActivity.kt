@@ -55,9 +55,26 @@ class MainActivity : AppCompatActivity() {
             val clickedStudent = mStudentList[ position ]
 
             Toast.makeText(this, clickedStudent.name, Toast.LENGTH_SHORT).show()
-            
-            
+
         }
+
+//        리스트뷰의 아이템이 길게 눌렸을때.
+        studentListView.setOnItemLongClickListener { adapterView, view, position, l ->
+
+//            ~~ 가 길게 눌림. 토스트 출력
+
+            val clickedStudent = mStudentList[ position ]
+
+            Toast.makeText(this, "${clickedStudent.name}이(가) 길게 눌림.", Toast.LENGTH_SHORT).show()
+
+
+//            마지막에 결과로 true / false 하나 지정 필요.
+
+            return@setOnItemLongClickListener true
+
+        }
+
+
 
     }
 }
