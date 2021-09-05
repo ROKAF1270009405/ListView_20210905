@@ -9,6 +9,8 @@ import android.content.Context
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.neppplus.listview_20210905.datas.StudentData
+import java.util.*
+import kotlin.collections.ArrayList
 
 class StudentAdapter(
     val mContext: Context,
@@ -50,6 +52,7 @@ class StudentAdapter(
 
 //        ageTxt에는, 출생년도가 아니라 -> 나이가 들어가야함.
 //        출생년도로, 나이를 계산하는 로직? => 자바 기초 / 파이썬 기초 -> 언어 역량
+//        2021 -> Calendar.getInstance().get(Calendar.YEAR)
         val age = 2021 - data.birthYear + 1
 
         ageTxt.text = "(${age}세)"
